@@ -1,0 +1,74 @@
+<h1 class="text-success text-center">Ambiente Angular Teste Diretivas</h1>
+
+<!-- Diretivas de Atributos (ngStyle e ngClass) -->
+<div [ngStyle]="{background: count <= 5 ? 'red' : 'green' }"
+     [ngClass]="{custom: count > 5}"
+>
+
+  <h2 class="text-center"> Contador: {{ count }}</h2>
+</div>
+
+<!-- Diretivas Estruturais (ngIf, Else, ngSwitch, ngFor) -->
+
+<h2 *ngIf="count > 7; else menor">Contador passou de 7!</h2>
+
+<ng-template #menor>
+  <h2>Contador menor que 7!</h2>
+</ng-template>
+
+<ul [ngSwitch]="count" class="list-group mx-auto col-5">
+  <li 
+     class="list-group-item"
+     *ngSwitchCase="0"
+  >
+      INICIANDO A CONTAGEM!
+  </li>
+  <li 
+     class="list-group-item"
+     *ngSwitchCase="5"
+  >
+      50% DA CONTAGEM 
+  </li>
+  <li 
+     class="list-group-item"
+     *ngSwitchCase="10"
+  >
+     CONTAGEM CONCLUIDA COM SUCESSO!
+  </li>
+  <li 
+     class="list-group-item"
+     *ngSwitchDefault
+  >
+     CONTADOR ESTA CONTANDO...
+  </li>
+ </ul>
+
+<br>
+
+ <ul [ngSwitch]="count" class="list-group mx-auto col-5">
+  <li 
+    class="list-group-item"
+    *ngFor="let pessoa of pessoas"
+    >
+    O nome da pessoa é {{ pessoa.nome }} {{ pessoa.sobrenome }}.
+  </li>
+ </ul>
+ <br>
+<div class="col-4 mx-auto">
+  <button class="btn btn-success col-5 mx-auto" (click)="clicou('Henrique')">Clique aqui</button>
+</div>
+
+<br>
+
+<div class="col-4 mx-auto">
+  <input
+  type="text" 
+  class="form-control" 
+  placeholder="Digite alguma coisa"
+  [(ngModel)] = "text"
+  >
+<br>
+  <h4>Output: {{ text }}</h4>
+
+</div>
+
