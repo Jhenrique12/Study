@@ -1,0 +1,2 @@
+# Study
+Repositório para estudo pessoal com programas testes com fins didáticos, contendo tecnologias específicas que estou estudando.
