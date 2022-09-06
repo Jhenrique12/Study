@@ -1,0 +1,85 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700|PT++Mono);
+
+:root {
+    --primary-color: #329542 ;
+    --secondary-color: #000000;
+    --tertiary-color: rgb(41, 142, 36);
+}
+
+body {
+    background-color: var(--primary-color);
+    background-image: url("/src/image-money.jpg");
+    background-size: contain;
+    font-size: 15px;
+    font-family: Lato, sans-serif;
+}
+
+#container {
+    height: 525px;
+    width: 360px;
+    margin: 100px auto;
+    background: #f7f7f7;
+    box-shadow: 5px 5px 5px var(--secondary-color);
+    border-radius: 20px;
+}
+
+.title {
+    background: var(--tertiary-color);
+    color: var(--secondary-color);
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-align: center;
+}
+
+.tipsForm {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.formInput {
+    background: #f7f7f7;
+    width: 110px;
+    padding: 5px 5px 8px 8px;
+    margin-bottom: 20px;
+} 
+
+.formInput:focus {
+    border: 3px solid var(--primary-color);
+    outline: none;
+}
+
+.formSelect{
+    width: 180px;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.formSubmit {
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    margin: 15px auto;
+    background: var(--primary-color);
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    font-size: 17px;
+    color: black;
+}
+
+.formSubmit:hover {
+    color: white;
+    background: var(--tertiary-color);
+}
+
+#totalTip {
+    font-size: 17px;
+    margin-top: none;
+    text-align: center ;
+}
