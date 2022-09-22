@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SpaceX | Hire Us</title>
+  </head>
+  <header>
+    <nav>
+      <a href="./home.html">
+        <img
+          src="https://logodownload.org/wp-content/uploads/2021/02/spacex-logo-1.png"
+          alt="SpaceX-Logo"
+          style="max-width: 230px; min-height: 55px"
+        />
+      </a>
+      <a href="./spacerships.html">| The Spacerchips </a>
+      <a href="./hire-us.html">| Hire Us</a>
+    </nav>
+    <hr />
+  </header>
+
+  <body>
+    <h2>Hire Us Now</h2>
+    <p>
+      Leave a message to request one of our services and we will get back to you
+      soon as possible
+    </p>
+
+    <form>
+      <div>
+        <label for="name">Name: </label>
+        <input type="text" name="name" id="name" required />
+        <label for="email"> - Email: </label>
+        <input type="email" name="email" id="email" required /><br /><br />
+      </div>
+      <div>
+        <label for="spacerships">Spaceship: </label>
+        <select name="spacerships" id="spacerships">
+          <option value="Facon_9">Facon 9</option>
+          <option value="Falcom_Heavy">Falcom Heavy</option>
+        </select>
+        <label for="service"> - Type of Service</label>
+        <input
+          type="search"
+          name="service"
+          id="service"
+          list="services"
+          required
+        />
+        <datalist id="services">
+          <option value="service1">Service 1 Lorem ipsum dolor sit amet</option>
+          <option value="service2">Service 2 Lorem ipsum dolor sit amet</option>
+          <option value="service1">Service 3 Lorem ipsum dolor sit amet</option>
+          <option value="service2">Service 4 Lorem ipsum dolor sit amet</option>
+        </datalist>
+      </div>
+      <br /><br />
+
+      <input type="submit" name="submit" value="Send Message" />
+    </form>
+  </body>
+</html>
