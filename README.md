@@ -1,16 +1,13 @@
-# Study
-Repositório de exercícios do curso Fullstack JavaScript da OneBitCode.  
+# :book: Study
+Repositório de exercícios e estudos pessoais.  
 - HTML
 - CSS
 - Bulma
 - Bootstrap
 - JavaScript
+- TypeScript;
 - React
-- ES6+
-- TypeScript
-- NodeJS
-- Express.js
-- MongoDB
-- SQL
+- Angular;
+- Java;
 
 
