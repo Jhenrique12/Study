@@ -2,4 +2,135 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid black; */
+}
+
+.header {
+  background-color: #24292f;
+  height: 100px;
+  min-width: 100vw;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img-header {
+  height: 40px;
+  margin-left: 40px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-right: 40px;
+  /* border: 1px solid black; */
+}
+.button {
+  padding: 4px;
+  color: #ffffff;
+  font-size: 20px;
+  cursor: pointer;
+  /* border: 1px solid black; */
+}
+
+.button:hover {
+  border-bottom: 0.8px solid #ffff;
+}
+
+.content {
+  flex: 1 0 auto;
+  display: flex;
+  gap: 100px;
+  margin: 10px 90px;
+  grid-template-columns: repeat(4, 1fr);
+  min-height: 90vh;
+  /* border: 1px solid black; */
+}
+
+.title {
+  padding: 30px;
+  text-align: center;
+  justify-content: center;
+}
+.title h1 {
+  font-size: 40px;
+}
+.title p {
+  font-size: 20px;
+  color: #24292f;
+}
+
+.main-sports {
+  grid-column: 1/4;
+  display: grid;
+  gap: 15px;
+  /* border: 1px solid black; */
+  grid-template-columns: repeat(3, 1fr);
+  min-width: fit-content;
+}
+.main-content {
+  max-width: 300px;
+  /* max-height: fit-content; */
+  /* border: 1px solid black; */
+}
+.img-main {
+  height: 200px;
+  width: 300px;
+  border-radius: 5px;
+}
+
+.extra-sports {
+  background: #24292f;
+  /* grid-column: 1/1; */
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;
+  color: #ffffff;
+}
+
+.extra-content {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.img-extra {
+  height: 250px;
+}
+
+.footer {
+  background-color: #24292f;
+  height: 70px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img-footer {
+  height: 40px;
+  margin-left: 40px;
+}
+
+.BackToTop {
+  text-decoration: none;
+  color: #ffffff;
+  margin-right: 40px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.BackToTop:hover {
+  color: red;
 }
